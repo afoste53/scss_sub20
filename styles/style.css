@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: lightblue;
+  color: #ebffc0;
+}
+header button {
+  background: #196e5b;
+}
+header button:hover {
+  background: red;
+}
+header button::after {
+  content: " hellooooooo";
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+.contact button {
+  background: #ff9890;
+}
+
+/*# sourceMappingURL=style.css.map */

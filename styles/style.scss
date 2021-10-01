@@ -1,0 +1,43 @@
+$primary-btn: #196e5b;
+$secondary-btn: #ff9890;
+$text-color: #ebffc0;
+
+// can use different files -> prefix with _name.scss
+// @import name
+
+// @extend to inherit from another selector
+
+@mixin flex-center($direction){
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  flex-direction: $direction;
+}
+
+
+header {
+  @include flex-center(column);
+
+  background: lightblue;
+  color: $text-color;
+  button {
+    background: $primary-btn;
+
+
+    &:hover {
+      background: red;
+    }
+    &::after{
+      content: ' hellooooooo';
+    }
+  }
+}
+
+.contact{
+  @include flex-center(row);
+
+  button{
+    background: $secondary-btn;
+  }
+}
